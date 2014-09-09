@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MJNIndexView"
-  #s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "MJNIndexView"
 
   s.description  = <<-DESC
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/BITA-app/MJNIndexView.git", :tag => "1.0.4" }
+  s.source       = { :git => "https://github.com/BITA-app/MJNIndexView.git", :tag => "1.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
