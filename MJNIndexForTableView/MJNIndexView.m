@@ -728,7 +728,8 @@
     }
     // drawing deflection
     [self positionForIndexItemsWhilePanLocation:[touch locationInView:self]];
-    
+    [self.dataSource sectionForSectionMJNIndexTitle:self.indexItems[[self.section integerValue]] atIndex:[self.section integerValue]];
+
     return YES;
 }
 
