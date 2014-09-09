@@ -1,4 +1,4 @@
-
-MJNIndexForTableView.xcodeproj/project.xcworkspace/xcuserdata/yesjun.xcuserdatad/
-MJNIndexForTableView.xcodeproj/xcuserdata/yesjun.xcuserdatad/
-MJNIndexForTableView.xcodeproj/project.xcworkspace/xcshareddata/
+build
+.DS_Store
+xcuserdata
+project.xcworkspace
