@@ -92,7 +92,7 @@ please remember that margins are set for the largest size of selected item font*
 @property (nonatomic,assign) CGFloat maxItemDeflection;
 
 // set the number of items deflected below and above the selected one (default is 3 items)
-@property (nonatomic, assign) int rangeOfDeflection;
+@property (nonatomic, assign) NSInteger rangeOfDeflection;
 
 // set the curtain color if you want a curtain to appear (default is none)
 @property (nonatomic, strong) UIColor *curtainColor;

@@ -51,7 +51,7 @@
 @property (nonatomic, assign) CGFloat maxWidth;
 @property (nonatomic, assign) CGFloat maxHeight;
 @property (nonatomic) BOOL animate;
-@property (nonatomic) int actualRangeOfDeflection;
+@property (nonatomic) NSInteger actualRangeOfDeflection;
 
 // curtain properties
 @property (nonatomic, strong) CAGradientLayer *gradientLayer;

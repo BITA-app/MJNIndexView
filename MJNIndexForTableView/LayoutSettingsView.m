@@ -26,7 +26,7 @@
 @property (nonatomic, assign) BOOL darkening;
 @property (nonatomic, assign) BOOL fading;
 @property (nonatomic, assign) BOOL ergoHeight;
-@property (nonatomic, assign) int rangeOfDeflection;
+@property (nonatomic, assign) NSInteger rangeOfDeflection;
 @property (nonatomic, assign) CGFloat maxDeflection;
 @property (nonatomic, assign) CGFloat rightMargin;
 @property (nonatomic, assign) CGFloat upperMargin;
@@ -47,7 +47,7 @@
     return self;
 }
 
--(id)initWithDeflectionRange:(int)range
+-(id)initWithDeflectionRange:(NSInteger)range
                maxDeflection:(CGFloat)maxDef
                 itemAligment:(NSTextAlignment)aligment
                  rightMargin:(CGFloat)rightM
@@ -163,7 +163,7 @@
     self.rangeDeflectionValue = [[UITextField alloc]initWithFrame:CGRectMake(175.0, 210.0, 45.0, 25.0)];
     self.rangeDeflectionValue.borderStyle = UITextBorderStyleRoundedRect;
     [self.rangeDeflectionValue setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
-    self.rangeDeflectionValue.text = [NSString stringWithFormat:@"%d",self.rangeOfDeflection];
+    self.rangeDeflectionValue.text = [NSString stringWithFormat:@"%ld",(long)self.rangeOfDeflection];
     [self.rangeDeflectionValue addTarget:self action:@selector(changeRangeValue:) forControlEvents:UIControlEventEditingChanged];
     [self addSubview:self.rangeDeflectionValue];
     

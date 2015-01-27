@@ -21,7 +21,7 @@
 
 @property (nonatomic, weak) id <LayoutSettingsViewDelegate> delegate;
 
--(id)initWithDeflectionRange:(int)range
+-(id)initWithDeflectionRange:(NSInteger)range
                maxDeflection:(CGFloat)maxDef
                 itemAligment:(NSTextAlignment)aligment
                  rightMargin:(CGFloat)rightM

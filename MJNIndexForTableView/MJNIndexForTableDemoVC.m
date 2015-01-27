@@ -92,7 +92,7 @@ LayoutSettingsViewDelegate, ExampleSettingsViewDelegate>
 @property (nonatomic,assign) CGFloat maxItemDeflection;
 
 // set the number of items deflected below and above the selected one (default is 5)
-@property (nonatomic, assign) int rangeOfDeflection;
+@property (nonatomic, assign) NSInteger rangeOfDeflection;
 
 // set the curtain color if you want a curtain to appear (default is none)
 @property (nonatomic, strong) UIColor *curtainColor;
@@ -485,7 +485,7 @@ LayoutSettingsViewDelegate, ExampleSettingsViewDelegate>
     self.sectionArray = [NSMutableArray array];
     
     
-    int numberOfFirstLetters = [self countFirstLettersInArray:self.crayons];
+    NSInteger numberOfFirstLetters = [self countFirstLettersInArray:self.crayons];
     
     for (int i=0; i< numberOfFirstLetters; i++) {
         [self.sectionArray addObject:[self itemsInSection:i]];
@@ -669,7 +669,7 @@ LayoutSettingsViewDelegate, ExampleSettingsViewDelegate>
 }
 
 
-- (int) countFirstLettersInArray:(NSArray *)categoryArray
+- (NSInteger) countFirstLettersInArray:(NSArray *)categoryArray
 {
     NSMutableArray *existingLetters = [NSMutableArray array];
     for (NSString *name in categoryArray){
